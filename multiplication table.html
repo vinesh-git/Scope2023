@@ -1,0 +1,34 @@
+<HTML>
+     <HEAD>
+      <TITLE> chess board </TITLE>
+      <META NAME="Generator" CONTENT="EditPlus">
+      <META NAME="Author" CONTENT="">
+      <META NAME="Keywords" CONTENT="">
+      <META NAME="Description" CONTENT="">
+    <style type="text/css">
+          table,td
+          {
+          border: 2px solid purple;
+          border-collapse: collapse
+        }
+          </style>
+          </head>
+          <body>
+          <script language="javascript">
+              var i,j;
+              document.write("<table>");
+              for(i=1;i<=10;i++)
+              {
+                  document.write("<tr>")
+                  if(i%2==0)
+                      {
+                          for(j=1;j<=10;j++)
+                              {
+                                  document.write("<td style='background-color:orange'>" +j+"*"+i+"="+j*i+ "</td>")
+                              }
+                      }
+                  document.write("</tr>")
+              }
+              document.write("</table>");
+              </script></body>
+          </html>
